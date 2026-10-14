@@ -1,0 +1,6 @@
+{
+  "name": "Koperasi Marangkai Sejahtera Bersama",
+  "description": "Official website and store of Koperasi Marangkai Sejahtera Bersama, premium Excelsa coffee producers from Meratus Mountains, Tapin Regency, South Kalimantan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

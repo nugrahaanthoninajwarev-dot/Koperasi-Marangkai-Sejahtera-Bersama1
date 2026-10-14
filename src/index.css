@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-title: 'Caladea', serif;
+    --font-body: 'Barlow', sans-serif;
+    --font-accent: 'Montserrat', sans-serif;
+    
+    /* Semi-Pastel Color System */
+    --pastel-bg-main: #F7F5EE;
+    --pastel-bg-card: #FFFFFF;
+    --pastel-sage: #537361;
+    --pastel-sage-light: #E7EFE9;
+    --pastel-mint: #D4E8DC;
+    --pastel-matcha: #C2D6C6;
+    --pastel-honey: #E0B47F;
+    --pastel-honey-light: #F7ECE1;
+    --pastel-peach: #F6D8C9;
+    --pastel-dark-sage: #2C4237;
+    --pastel-dark-border: #3D5849;
+    --pastel-text-main: #334038;
+    --pastel-text-muted: #64756A;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--pastel-text-main);
+    background-color: var(--pastel-bg-main);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-bebas {
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em;
+}
+
+.font-caladea {
+  font-family: var(--font-title);
+}
+
+.font-barlow {
+  font-family: var(--font-body);
+}
+
+.font-montserrat {
+  font-family: var(--font-accent);
+}
+
+/* Semi-Pastel Custom Utilities */
+.bg-pastel-main {
+  background-color: #F7F5EE;
+}
+
+.bg-pastel-sage-light {
+  background-color: #E7EFE9;
+}
+
+.bg-pastel-mint-light {
+  background-color: #DDEEE3;
+}
+
+.bg-pastel-honey-light {
+  background-color: #F8EFE4;
+}
+
+.bg-pastel-dark {
+  background-color: #2D4438;
+}
+
+.border-pastel-light {
+  border-color: #DCE5DE;
+}
+
+.text-pastel-sage {
+  color: #4D705C;
+}
+
+.text-pastel-honey {
+  color: #D4A36E;
+}
+
+.smooth-shadow {
+  box-shadow: 0 10px 30px -10px rgba(53, 80, 65, 0.09);
+}
+
+.pastel-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(247, 245, 238, 0.18) 0%, rgba(38, 59, 48, 0.5) 100%);
+}
+
+/* Subtle Product Image Hover Scaling */
+.product-image-hover {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.group:hover .product-image-hover,
+.product-image-hover:hover {
+  transform: scale(1.03);
+}
