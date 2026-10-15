@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
+    "build:cpanel": "vite build && python3 -c \"import shutil; shutil.make_archive('cpanel-deploy', 'zip', 'dist'); print('\\n✅ cpanel-deploy.zip generated successfully! Upload and extract this file in your cPanel public_html folder.')\"",
     "preview": "vite preview",
-    "clean": "rm -rf dist server.js",
+    "clean": "rm -rf dist server.js cpanel-deploy.zip",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
